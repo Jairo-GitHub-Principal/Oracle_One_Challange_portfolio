@@ -1,4 +1,6 @@
 # Challenge ONE | Front End - Portfólio
+
+## o primeiro commit desse projeto, contem o modelo de portfólio disponibilizado pela alura para os alunos da jornada de front-end Oracle-One-Alura
 ---
 
 <p align="center" >
