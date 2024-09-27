@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,16 +8,17 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <!-- Fonte do Projeto Raleway -->
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
     <title>Meu Portfólio</title>
 </head>
 
-<body>
+<body class="container__bady">
     <!-- Menu -->
     <header class="cabecalho">
         <img class="cabecalho__logo" src="assets/vector.png" alt="Logo">
-        <h1 class="cabecalho__titulo">Jairo Cesar Santos Rocha</h1>
+        <h1 class="cabecalho__titulo">Jairo Cesar Santos Rocha </h1>
         <nav class="navegacao">
             <ul class="navegacao__lista">
                 <li class="navegacao__elemento"><a href="#sobre-mim">Sobre mim</a></li>
@@ -31,26 +33,61 @@
 
     <!-- Seção de Apresentação -->
     <section class="apresentacao">
-        <img class="apresentacao__foto" src="assets/profile.png" alt="Foto de perfil">
+        <figure>
+            <img class="apresentacao__foto" src="assets/jairo.png" alt="Foto de perfil">
+        </figure>
         <div class="apresentacao__conteiner">
-            <h2 class="apresentacao__titulo">Olá, meu nome é Fulana de Tal e construo páginas web</h2>
-            <p class="apresentacao__subtitulo">Sou formada em... lorem ipsum sit amet consectetur e atualmente estou participando do projeto Oracle ONE na Alura Latam.</p>
+            <h2 class="apresentacao__titulo">Olá, meu nome é Jairo</h2>
+            <p class="apresentacao__subtitulo">Sou técnico em informatica e atualmente estou
+                participando do projeto Oracle ONE na Alura Latam.</p>
+            <p class="apresentacao__dados__pessoais">Nome: Jairo Cesar Santos Rocha</p>
+            <p class="apresentacao__dados__pessoais">Nacionalidade: Brasileiro</p>
+
+
             <ul class="redes">
-                <li class="redes__elemento"><a href="">Github <img src="assets/arrow.png" alt="Seta"></a></li>
-                <li class="redes__elemento"><a href="">Linkedin <img src="assets/arrow.png" alt="Seta"></a></li>
-                <li class="redes__elemento"><a href="">Instagram <img src="assets/arrow.png" alt="Seta"></a></li>
+                <li class="redes__elemento"><a href="https://github.com/Jairo-GitHub-Principal">Github <img
+                            src="assets/arrow.png" alt="Seta"></a></li>
+                <li class="redes__elemento"><a href="www.linkedin.com/in/jairo-rocha-web">Linkedin <img
+                            src="assets/arrow.png" alt="Seta"></a></li>
                 <li class="redes__elemento"><a href="">Currículo <img src="assets/arrow.png" alt="Seta"></a></li>
             </ul>
         </div>
     </section>
 
     <!-- Seção sobre mim -->
-    <section class="sobre-mim" id="sobre-mim">
-        <h2 class="sobre-mim__titulo">Sobre mim</h2>
-        <p class="sobre-mim__texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque velit velit, volutpat semper dignissim dictum, imperdiet ut lacus. Quisque gravida ex a mattis pretium. Suspendisse potenti. Ut semper sagittis ligula et lacinia.</p>
-        <p class="sobre-mim__texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque velit velit, volutpat semper dignissim dictum, imperdiet ut lacus. Quisque gravida ex a mattis pretium. Suspendisse potenti. Ut semper sagittis ligula et lacinia. Aenean sit amet felis venenatis, egestas metus vitae, aliquet metus.</p>
-        <!-- Assinatura opcional -->
-        <img class="sobre-mim__assinatura" src="assets/signature.png" alt="Assinatura">
+    <section class="sobre__mim">
+         <h2 class="sobre-mim__titulo">Sobre mim</h2>
+        <div class="sobre-mim__apresentacao">
+            <p class="paragrafo"> <span class="ident__paragrafo"></span>
+                 Sou técnico em informática com sólida experiência em suporte técnico, manutenção de
+                sistemas e soluções de TI.<br>
+
+
+
+                Atualmente, estou em transição de carreira para o desenvolvimento web, área pela
+                qual sempre tive grande interesse.<br>
+
+                Para essa nova etapa, estou me especializando em desenvolvimento
+                front-end
+                por meio de cursos de programação voltados para HTML, CSS, JavaScript e frameworks modernos como Angular
+                e
+                React.
+            </p>
+
+            <p class="paragrafo">
+                Tenho paixão por resolver problemas e um forte desejo de me aprofundar em tecnologias que proporcionem
+                uma
+                excelente
+                experiência ao usuário final. Meu objetivo é unir minha experiência prática em TI com as habilidades que
+                estou
+                adquirindo no desenvolvimento web para criar soluções eficientes e de fácil manutenção.<br>
+
+                Estou buscando uma oportunidade para aplicar meus conhecimentos e crescer profissionalmente como
+                desenvolvedor
+                web.
+            </p>
+        </div>
+       
     </section>
 
     <!-- Seção de Habilidades -->
@@ -58,7 +95,7 @@
         <h2 class="habilidades__titulo">Habilidades</h2>
         <ul class="habilidades__lista">
             <li class="habilidades__elemento">
-                <img class="habilidades__icone" src="assets/html.png" alt="HTML">
+                <img class="habilidades__icone" src="/assets/htlm.png" alt="HTML">
                 <p class="habilidades__nome">HTML 5</p>
             </li>
             <li class="habilidades__elemento">
@@ -66,8 +103,8 @@
                 <p class="habilidades__nome">JavaScript</p>
             </li>
             <li class="habilidades__elemento">
-                <img class="habilidades__icone" src="assets/php_icon.png" alt="PHP">
-                <p class="habilidades__nome">PHP</p>
+                <img class="habilidades__icone" src="assets/css_icon.png" alt="CSS">
+                <p class="habilidades__nome">CSS</p>
             </li>
             <li class="habilidades__elemento">
                 <img class="habilidades__icone" src="assets/nodejs_icon.png" alt="Node.js">
@@ -78,9 +115,10 @@
                 <p class="habilidades__nome">React</p>
             </li>
             <li class="habilidades__elemento">
-                <img class="habilidades__icone" src="assets/css_icon.png" alt="CSS">
-                <p class="habilidades__nome">CSS</p>
+                <img class="habilidades__icone" src="assets/icons8-angular-24.png" alt="Angular">
+                <p class="habilidades__nome">Angular</p>
             </li>
+
         </ul>
     </section>
 
@@ -88,30 +126,24 @@
     <section class="hobbies" id="hobbies">
         <h2 class="hobbies__titulo">Hobbies</h2>
         <ul class="hobbies__lista">
+
             <li class="hobbies__elemento">
-                <img class="hobbies__icone" src="assets/skate_icon.png" alt="Skate">
-                <p class="hobbies__nome">Skate</p>
+                <img class="hobbies__icone" src="assets/filmes.png" alt="Assistir séries e filmes">
+                <p class="hobbies__nome">Séries e filmes</p>
             </li>
             <li class="hobbies__elemento">
-                <img class="hobbies__icone" src="assets/guitar_icon.png" alt="Tocar baixo">
-                <p class="hobbies__nome">Tocar baixo</p>
+                <img class="hobbies__icone" src="assets/caminhada.png" alt="Caminhadas">
+                <p class="hobbies__nome">Caminhada</p>
             </li>
             <li class="hobbies__elemento">
-                <img class="hobbies__icone" src="assets/headphones_icon.png" alt="Ouvir música">
-                <p class="hobbies__nome">Ouvir música</p>
+                <img class="hobbies__icone" src="assets/estudar.png" alt="Estudar">
+                <p class="hobbies__nome">Estudar</p>
             </li>
             <li class="hobbies__elemento">
-                <img class="hobbies__icone" src="assets/tv_icon.png" alt="Assistir séries">
-                <p class="hobbies__nome">Assistir séries</p>
+                <img class="hobbies__icone" src="assets/game.png" alt="Jogar games">
+                <p class="hobbies__nome">Games</p>
             </li>
-            <li class="hobbies__elemento">
-                <img class="hobbies__icone" src="assets/forkspoon_icon.png" alt="Cozinhar">
-                <p class="hobbies__nome">Cozinhar</p>
-            </li>
-            <li class="hobbies__elemento">
-                <img class="hobbies__icone" src="assets/camera_icon.png" alt="Fotografar">
-                <p class="hobbies__nome">Fotografar</p>
-            </li>
+
         </ul>
     </section>
 
@@ -120,24 +152,52 @@
         <h2 class="formacao__titulo">Formação Acadêmica</h2>
         <ul class="formacao__lista">
             <li class="formacao__elemento">
-                <img class="formacao__icone" src="assets/ufpr_logo.png" alt="UFPR">
-                <div>
-                    <h3 class="formacao__nome">Análise de Dados</h3>
-                    <p class="formacao__detalhe">2018 - UFPR</p>
+                <figure class="formacao__elemento__imagem">
+                    <img  class="formacao__icone " src="assets/etec.png" alt="etec">
+                </figure>
+                <div class="formacao__elemento__titulo">
+                    <h3 class="formacao__nome">Tecnico em eletrônica</h3>
+                    <p class="formacao__detalhe">2020 - Etec </p>
                 </div>
             </li>
             <li class="formacao__elemento">
-                <img class="formacao__icone" src="assets/alura_logo.png" alt="Alura">
-                <div>
-                    <h3 class="formacao__nome">Formação em UX Design</h3>
-                    <p class="formacao__detalhe">2019 - Alura</p>
+                <figure class="formacao__elemento__imagem">
+                    <img class="formacao__icone" src="assets/senac.png" alt="Senac">
+
+                </figure>
+                <div class="formacao__elemento__titulo">
+                    <h3 class="formacao__nome">Tecnico em informatica para internet </h3>
+                    <p class="formacao__detalhe">2023 - Senac</p>
                 </div>
             </li>
             <li class="formacao__elemento">
-                <img class="formacao__icone" src="assets/ufrj_logo.png" alt="UFRJ">
-                <div>
-                    <h3 class="formacao__nome">Pós-graduação em Design</h3>
-                    <p class="formacao__detalhe">Em andamento - UFRJ</p>
+                <figure class="formacao__elemento__imagem">
+                    <img class="formacao__icone" src="assets/capgemine.png" alt="Capgemine">
+
+                </figure>
+                <div class="formacao__elemento__titulo">
+                    <h3 class="formacao__nome">Trilha Java Capgemini</h3>
+                    <p class="formacao__detalhe">2023-Capgemini</p>
+                </div>
+            </li>
+            <li class="formacao__elemento">
+                <figure class="formacao__elemento__imagem">
+                    <img class="formacao__icone" src="assets/trendsIT.png" alt="Programa TrendsIT">
+
+                </figure>
+                <div class="formacao__elemento__titulo">
+                    <h3 class="formacao__nome">Trilha Web Full-Stack TrandsIT</h3>
+                    <p class="formacao__detalhe">2024-TrendsIT</p>
+                </div>
+            </li>
+
+            <li class="formacao__elemento">
+                <figure class="formacao__elemento__imagem">
+                    <img class="formacao__icone" src="assets/Oracle_One.png" alt="Programa Oracle On Alura">
+                </figure>
+                <div class="formacao__elemento__titulo">
+                    <h3 class="formacao__nome">Oracle-One Alura</h3>
+                    <p class="formacao__detalhe">Em andamento- Alura</p>
                 </div>
             </li>
         </ul>
@@ -146,26 +206,79 @@
     <!-- Seção de Projetos -->
     <section class="projetos" id="projetos">
         <h2 class="projetos__titulo">Experiência Profissional</h2>
-        <div class="projetos__conteiner">
-            <h3 class="projetos__nome">Título da Experiência</h3>
-            <p class="projetos__descricao">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt quisquam unde repudiandae fugiat, earum temporibus!</p>
-        </div>
-        <div class="projetos__conteiner">
-            <h3 class="projetos__nome">Título da Experiência</h3>
-            <p class="projetos__descricao">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt quisquam unde repudiandae fugiat, earum temporibus!</p>
-        </div>
+
+        <h2 class="projetos__subtitulos">Projetos realizados</h2>
+
+
+
+        <article class="projeto__elemento">
+
+            <div class="projetos__conteiner">
+                <h3 class="projetos__nome">RestoredHouse</h3>
+                <p class="projetos__descricao">Trata-se de um projeto de um site, SPA (single page aplication), para
+                    anunciar serviços relacionado a construção, reformas e manutenção residencial.
+                </p>
+                <p>Nesse site o visitante vai poder ver os serviços oferecidos pela empresa,
+                    vai poder ver os feedbacks e as imagem de alguns serviços que foram realizados por essa empresa.
+                </p>
+
+                <p>Esso Projeto atualmente se encontra em faze de teste.</p>
+                <p>O codigo desse projeto pode ser verificado nesse reporitorio no Github:
+                    <a href="https://github.com/Jairo-GitHub-Principal/restoredHouseAngular.git" target="_blank"><span class="link__projeto">click aqui. </span>
+                    </a>
+                </p>
+                <p>Acesse o site RestoredHouse aqui:
+                    <a href="http://jairocesa.com.br/" target="_blank"><span class="link__projeto">RestoredHouse</span>
+                    </a>
+                </p>
+
+            </div>
+        </article>
+
+        
+            <!-- <figure class="projeto__container__img">
+                <img class="projeto__img" src="./assets/projeoto_restoredHouse.png"/>
+            </figure> -->
+        
+        <article class="projeto__elemento" >
+
+            <div class="projetos__conteiner">
+                <h3 class="projetos__nome">NinjaFeeders</h3>
+                <p class="projetos__descricao">Trata-se de um projeto acadêmico que é um quadro de mansagens de uma rede
+                    social, desenvolvido com um modelo de Chat.</p>
+                <p>Nessa rede um usuario pode se cadastrar nela, apartir do seu cadastra ele faz login, e então podera
+                    interagir com os membros da rede, enviando mensagens, solicitando amizade.<br>Esse projeto atualmente se encontra em faze de teste, o codigo do mesmo pode ser verificado nesse reporitorio no Github: <a
+                        href="https://github.com/NinjaFeeders/ninja-feeders-web.git" target="_blank"><span class="link__projeto">click aqui. </span></a> </p>
+                <p>Acesse a pagina da rede aqui: <a href="http://jcwebteste.com.br/" target="_blank"><span class="link__projeto">NinjaFeeders</span></a></p>
+
+
+            </div>
+        </article>
+
     </section>
 
     <!-- Seção de Contato -->
     <section class="contato" id="contato">
         <h2 class="contato__titulo">Contato</h2>
-        <form class="contato__formulario">
-            <input class="contato__campo" type="text" placeholder="Nome">
-            <input class="contato__campo" type="email" placeholder="E-mail">
-            <textarea class="contato__campo contato__campo--textarea" placeholder="Mensagem"></textarea>
-            <button class="contato__botao" type="submit">Enviar</button>
-        </form>
+
+        <div class="contato__container__formulario">
+            <figure class="contato__form__img">
+                <img class="form__img" src="/assets/contatos.png"/>
+            </figure>
+            <form class="contato__formulario"  id="formulario">
+                <input class="contato__campo"  type="text" placeholder="Nome" id="nome">
+                <span id="erroNome" class="error"></span>
+                <input class="contato__campo" type="email" placeholder="E-mail" id="email">
+                <span id="erroEmail" class="error"></span>
+                <textarea class="contato__campo contato__campo--textarea" placeholder="Mensagem" id="mensagem"></textarea>
+                <span id="erroMensagem" class="error"></span>
+                <button type="button" class="contato__botao" id="botao" onclick="enviarEmail()" >Enviar</button>
+            </form>
+        </div>
+        
     </section>
+
+    <script type="text/JavaScript"  src="/script.js"></script>
 </body>
 
 </html>

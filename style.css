@@ -1,4 +1,6 @@
 /* Este repositório base foi criado para te ajudar caso você não saiba como começar. Lembre-se de que o portfólio é a sua carta de apresentação e você deve dar a sua cara. Por isso, convidamos você a personalizá-lo de acordo com o seu estilo e preferências; não se limite apenas ao layout proposto no Figma. */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
 :root {
     --cor-de-fundo: #F5F5F5;
     --cor-de-fundo-menu: #ffffff;
@@ -12,9 +14,17 @@ body {
     box-sizing: border-box;
     padding: 0;
     line-height: 1.6;
+
+    /* eu mexi aqui*/
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
 }
 
-ol, ul, li {
+ol,
+ul,
+li {
     list-style: none;
 }
 
@@ -33,7 +43,8 @@ a {
 }
 
 .cabecalho__logo {
-    max-width: 80px; /* Ajuste para telas pequenas */
+    max-width: 80px;
+    /* Ajuste para telas pequenas */
 }
 
 .cabecalho__titulo {
@@ -48,23 +59,436 @@ a {
 .navegacao__elemento a {
     font-size: 0.9rem;
 }
+
 /* ------------------------------ Seção Apresentação ------------------------------*/
+
+.apresentacao {
+
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    max-height: 368px;
+
+
+}
+
+.apresentacao__foto {
+    border-radius: 50%;
+    border: solid 5px grey;
+    flex-shrink: 3;
+    width: 358px;
+    margin: 0px;
+    box-shadow: 0px 0px 10px black;
+
+
+}
+
+.apresentacao__conteiner {
+    max-width: 951px;
+}
+
+.apresentacao__titulo {
+    font-family: Raleway;
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 61.05px;
+    text-align: left;
+}
+
+.apresentacao__subtitulo {
+    font-family: Raleway;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 25.83px;
+    text-align: left;
+
+}
+
+.apresentacao__dados__pessoais {
+    font-family: Raleway;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 18.78px;
+    text-align: left;
+
+}
+
+.redes {
+    display: flex;
+    gap: 32px;
+    padding: 0px;
+}
+
+.redes__elemento a {
+    font-family: Raleway;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 18.78px;
+    text-align: left;
+
+}
+
 
 
 /* ------------------------------ Seção Sobre mim ----------------------------------*/
+.sobre__mim {
+    width: 100%;
+    gap: 10px;
+    max-width: 1136px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    padding: 32px 10px 32px 10px;
+}
 
+.sobre-mim__titulo {
+
+
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 32px;
+}
+
+
+
+.sobre-mim__apresentacao {
+    font-family: Raleway;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 18.78px;
+    text-align: left;
+    line-height: 35px;
+    
+
+}
+
+.paragrafo{
+    text-align: justify;
+}
+
+.ident__paragrafo{
+    margin-left: 50px;
+}
 
 /*------------------------------ Seção de Habilidades ------------------------------*/
+.habilidades {
+    border-top: solid 1px rgb(49, 93, 147);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
+}
+
+.habilidades__titulo {
+    font-family: Raleway;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 37.57px;
+    text-align: center;
+
+    margin-bottom: 32px;
+}
+
+.habilidades__lista {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.habilidades__elemento {
+    width: 176px;
+    height: 174px;
+    padding: 16px 0 0 16px;
+    background: #FFFFFF;
+}
 
 /*------------------------------ Seção de Hobbies --------------------------------*/
+.hobbies {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.hobbies__titulo {
+    font-family: Raleway;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 37.57px;
+    text-align: center;
+
+}
+
+.hobbies__lista {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.hobbies__elemento {
+    width: 176px;
+    height: 174px;
+    padding: 16px 0 0 16px;
+    background: #FFFFFF;
+}
 
 
-/*------------------------------ Seção de Projetos --------------------------------*/
+
+/*------------------------------ Seção de Formação acadêmica --------------------------------*/
+.formacao {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.formacao__titulo {
+    font-family: Raleway;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 37.57px;
+    text-align: center;
+
+
+}
+
+.formacao__lista {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.formacao__elemento {
+    width: 368px;
+    background: #FFFFFF;
+    box-sizing: border-box;
+}
+
+.formacao__elemento__imagem {
+    display: flex;
+    justify-content: center;
+    border: solid 1px rgb(49, 93, 147);
+
+
+
+}
+
+.formacao__icone {
+    width: 100%;
+    height: 192px;
+
+}
+
+.formacao__elemento__titulo {
+    padding: 0 10px;
+
+}
+
+/*------------------------------ Seção de Projetos  e esperiencia profissional---------------------------------*/
+.projetos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-top: solid 1px rgb(49, 93, 147);
+
+
+}
+
+.projetos__titulo {
+    font-family: Raleway;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 37.57px;
+    text-align: center;
+
+}
+
+.projetos__subtitulos {
+    font-family: Raleway;
+    font-size: 31px;
+    font-weight: 600;
+    line-height: 37.57px;
+    text-align: center;
+}
+
+.projeto__elemento {
+    display: flex;
+    width: 60%;
+    padding: 1%;
+
+    border-bottom: solid 0.5px black;
+
+
+
+}
+
+.projetos__nome {
+    font-family: Raleway;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 35px;
+    text-align: start;
+
+}
+
+.projeto__img{
+    width: 70%;
+    height: 50vh;
+}
+
+.projetos__conteiner p {
+    font-family: Raleway;
+    font-size: 18px;
+    font-weight: 550;
+    text-align: start;
+
+}
+
+.link__projeto {
+    font-family: Raleway;
+    font-size: 25px;
+    font-weight: 700;
+    text-align: start;
+    color: rgb(14, 100, 142);
+}
+
+.link__projeto:hover {
+
+    font-size: 28px;
+    font-weight: 800;
+
+}
+
 
 
 /*------------------------------ Seção de Contato ---------------------------------*/
 
+.contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+
+}
+
+.contato__titulo {
+    font-family: Raleway;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 37.57px;
+    text-align: left;
+
+
+
+}
+
+.contato__container__formulario {
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    width: 90%;
+
+
+
+}
+
+.contato__formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 50%;
+    gap: 50px;
+    padding: 30px;
+
+
+
+}
+
+.contato__campo {
+    font-family: Raleway;
+
+    font-weight: 700;
+    line-height: 37.57px;
+    text-align: left;
+    font-size: 18px;
+    border-radius: 8px;
+    border-style: none;
+    padding-left: 10px;
+    box-shadow: 0px 0px 15px grey;
+
+}
+
+/*validação dos campos do foumulario*/
+.error {
+    color: red;
+    font-size: 14px;
+    display: block;
+    margin-top: 5px;
+}
+
+
+
+/* Fim validação dos campos do foumulario*/
+
+.contato__botao {
+
+    font-size: 20px;
+    font-weight: 700;
+    width: 200px;
+    padding: 10px;
+    border-radius: 8px;
+    border-style: none;
+    background-color: rgba(25, 173, 214, 0.83);
+    align-self: center;
+    box-shadow: 0px 0px 5px rgb(2, 82, 139);
+    color: rgb(6, 36, 92);
+
+}
+
+.contato__botao:hover {
+
+    border: none;
+    color: rgb(131, 126, 126);
+    text-align: center;
+    text-decoration: none;
+
+    font-size: 18px;
+
+    cursor: pointer;
+    transition: transform 0.1s ease;
+    /* Suaviza a transição de clique */
+}
+
+.contato__botao:active {
+    transform: scale(1.2);
+    /* Diminui o botão ligeiramente no clique */
+    color: white;
+    background-color: rgb(2, 82, 139);
+    /* Muda a cor do botão enquanto pressionado */
+}
+
+.contato__form__img {
+
+    margin: 0;
+    width: 20%;
+
+
+}
+
+.form__img {
+    width: 100%;
+}
 
 /* ------------------------------ Responsividade ---------------------------------------*/
 
@@ -98,6 +522,7 @@ a {
 
 /* Telas grandes */
 @media (min-width: 1024px) {
+
     /* Aqui você pode ajustar ainda mais o design para telas grandes */
     .cabecalho__titulo {
         font-size: 1.8rem;
