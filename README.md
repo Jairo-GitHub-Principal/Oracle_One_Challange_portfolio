@@ -9,7 +9,15 @@
 
 ## trata-se de uma one page pessoal, que é um site de pagina unica usado para apresentar informações mais completas, nesse caso meus dados acadêmicos e profissionais.
 
-### A extrutura base desse projeto foi disponibilizado pela alura
+## A extrutura base desse projeto foi disponibilizado pela alura
+
+## O site foi desenvolvido, com:
+### html para posicionamento dos elementos.
+### css para estilização dos elementos.
+### javascrips para validação do formulario de contato.
+
+Como ja foi dito, trata-se de um site de pagina unica, tem um barra de navegação no topo, que leva o uauario para diferentes posições em uma unica pagina.
+até aqui ainda não foi implementado uma versão responsiva
 
 
 
