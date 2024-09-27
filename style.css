@@ -11,7 +11,7 @@ body {
     background-color: var(--cor-de-fundo);
     font-family: 'Raleway', sans-serif;
     margin: 0;
-    box-sizing: border-box;
+    
     padding: 0;
     line-height: 1.6;
 
@@ -268,6 +268,8 @@ a {
     width: 368px;
     background: #FFFFFF;
     box-sizing: border-box;
+
+    
 }
 
 .formacao__elemento__imagem {
@@ -292,10 +294,9 @@ a {
 
 /*------------------------------ Seção de Projetos  e esperiencia profissional---------------------------------*/
 .projetos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    
+    
+  
     border-top: solid 1px rgb(49, 93, 147);
 
 
@@ -305,7 +306,7 @@ a {
     font-family: Raleway;
     font-size: 32px;
     font-weight: 700;
-    line-height: 37.57px;
+    line-height: 37px;
     text-align: center;
 
 }
@@ -314,39 +315,91 @@ a {
     font-family: Raleway;
     font-size: 31px;
     font-weight: 600;
-    line-height: 37.57px;
+    line-height: 30px;
     text-align: center;
 }
 
 .projeto__elemento {
     display: flex;
-    width: 60%;
-    padding: 1%;
+    padding: 50px;
+    justify-content:center;
+    box-sizing: border-box;
+   
+    
+    
+}
+.projetos__conteiner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width:20%;
+    padding: 20px;
+  
+}
 
-    border-bottom: solid 0.5px black;
+.projeto__img__links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    padding: 20px;
+    box-sizing: border-box;
+}
 
+.img_projeto{
+    width: 100%;
+    height: 500px;
+    min-width: 400px;
+    box-shadow: 0px 0px 10px 3px rgb(49, 93, 147);;
+}
 
+.projetos__nome{
+    margin-top: 0;
+}
+.projeto__acesso_codigo_page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:20px;
+    min-width: 200px;
+    width: 100%;
+    box-sizing: border-box;
 
 }
+
+
+
+.button__page__code__site{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 150px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0px 0px 1px grey;
+}
+
+
+
 
 .projetos__nome {
     font-family: Raleway;
     font-size: 28px;
-    font-weight: 600;
+    font-weight: 700;
     line-height: 35px;
     text-align: start;
 
 }
 
-.projeto__img{
-    width: 70%;
-    height: 50vh;
-}
+
 
 .projetos__conteiner p {
     font-family: Raleway;
     font-size: 18px;
-    font-weight: 550;
+    font-weight: 600;
     text-align: start;
 
 }
@@ -375,6 +428,7 @@ a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    border-top: solid 1px rgb(49, 93, 147);
 
 
 
