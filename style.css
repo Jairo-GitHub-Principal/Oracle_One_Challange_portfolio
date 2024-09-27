@@ -58,6 +58,11 @@ a {
 
 .navegacao__elemento a {
     font-size: 0.9rem;
+    font-family: Raleway;
+font-weight: 500;
+line-height: 18.78px;
+text-align: left;
+
 }
 
 /* ------------------------------ Seção Apresentação ------------------------------*/
