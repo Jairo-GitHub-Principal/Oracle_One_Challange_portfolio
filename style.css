@@ -61,6 +61,11 @@ a {
     text-align: center;
 }
 
+.menu-hamburguer {
+    display: none;
+    
+}
+
 .navegacao__lista {
     display: flex;
     flex-direction: row;
@@ -593,6 +598,8 @@ a {
        padding: 0;
        flex-direction: column;
        width: 100%;
+       border:solid 1px black;
+       position: fixed;
    }
 
     .cabecalho__logo {
@@ -608,20 +615,46 @@ a {
 
     /* Navegação*/
     .navegacao {
-        align-self: start;
-        display: none;
+        align-self: center;
+        
+        
     }
 
+    /* Estilo do ícone "hambúrguer" */
+    .menu-hamburguer {
+       
+        display: block;
+        cursor: pointer;
+        font-size: 24px;
+        color: rgb(12, 11, 11);
+    }
+
+    /* menu colapsed amburguer*/
     
     .navegacao__lista {
-        padding: 5px;
-        display: flex;
+        display: none;
         flex-direction: column;
-        text-align: left;
+        position: absolute;
+        top: 100px;
+        right: 0;
+        background-color: #636363;
         width: 100%;
+        padding: 10px;
+           
 
-        border: solid 5px rgb(123, 10, 10);
+    }
 
+    .navegacao__elemento a{
+        color: white;
+        padding-left: 20px;
+        
+    }
+    
+
+     /* Quando o menu estiver aberto */
+     .navegacao__lista.ativa {
+        display: flex;
+       
     }
 
 
@@ -632,7 +665,7 @@ a {
         display: block;
         padding: 10px;
         text-align: center;
-        
+        margin-top: 100px;
         box-sizing: border-box;
         
        

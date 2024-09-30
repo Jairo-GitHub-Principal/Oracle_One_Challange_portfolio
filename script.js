@@ -54,3 +54,20 @@ function limparCamposForm(){
      document.getElementById('email').value = "";
      document.getElementById('mensagem').value = "";
 }
+
+
+// Seleciona o ícone de menu hambúrguer e a lista de navegação
+const menuHamburguer = document.querySelector('.menu-hamburguer');
+const menuLista = document.querySelector('.navegacao__lista');
+
+// Quando o ícone for clicado, ativa ou desativa o menu
+menuHamburguer.addEventListener('click', function() {
+    menuLista.classList.toggle('ativa');
+});
+
+// Fecha o menu quando um link for clicado
+document.querySelectorAll('.navegacao__elemento a').forEach(link => {
+    link.addEventListener('click', function() {
+        menuLista.classList.remove('ativa'); // Remove a classe "ativa" para esconder o menu
+    });
+});
