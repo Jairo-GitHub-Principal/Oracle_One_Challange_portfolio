@@ -15,9 +15,13 @@
 ### html para posicionamento dos elementos.
 ### css para estilização dos elementos.
 ### javascrips para validação do formulario de contato.
+### e para funcionalidade do menu colapsed
+
 
 Como ja foi dito, trata-se de um site de pagina unica, tem um barra de navegação no topo, que leva o uauario para diferentes posições em uma unica pagina.
 até aqui ainda não foi implementado uma versão responsiva
+
+## link de acesso ao site hospedado no versel: 
 
 
 
