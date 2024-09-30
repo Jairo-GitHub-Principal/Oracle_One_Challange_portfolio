@@ -7,17 +7,17 @@
     --cor-do-link: #000000;
 }
 
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
 body {
     background-color: var(--cor-de-fundo);
-    font-family: 'Raleway', sans-serif;
-    margin: 0;
-    
-    padding: 0;
-    line-height: 1.6;
 
-    /* eu mexi aqui*/
     display: flex;
     flex-direction: column;
+    box-sizing: border-box;
     gap: 32px;
 
 }
@@ -34,34 +34,46 @@ a {
 }
 
 /* ------------------------------ Seção Menu -------------------------------*/
+
+.border{
+    border: solid 3px orange;
+}
+
 .cabecalho {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    padding: 1rem;
+    padding: 2rem;
     background-color: var(--cor-de-fundo-menu);
+    
+
+    
 }
 
 .cabecalho__logo {
-    max-width: 80px;
+    max-width: 100px;
+
     /* Ajuste para telas pequenas */
 }
 
 .cabecalho__titulo {
-    font-size: 1.2rem;
+    font-size: 1.8rem;
     text-align: center;
 }
 
 .navegacao__lista {
-    display: none;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin-top: 0;
 }
 
 .navegacao__elemento a {
-    font-size: 0.9rem;
+    font-size: 1.5rem;
     font-family: Raleway;
-font-weight: 500;
-line-height: 18.78px;
-text-align: left;
+    font-weight: 500;
+    line-height: 18.78px;
+    text-align: left;
 
 }
 
@@ -73,11 +85,19 @@ text-align: left;
     flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
-    max-height: 368px;
+    height: auto;
+    gap: 30px;
+    padding: 30px;
+   
 
 
 }
+.img__pessoal__container{
+    display: flex;
+   
+   
 
+}
 .apresentacao__foto {
     border-radius: 50%;
     border: solid 5px grey;
@@ -91,6 +111,9 @@ text-align: left;
 
 .apresentacao__conteiner {
     max-width: 951px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
 .apresentacao__titulo {
@@ -116,6 +139,7 @@ text-align: left;
     font-weight: 600;
     line-height: 18.78px;
     text-align: left;
+    
 
 }
 
@@ -138,14 +162,14 @@ text-align: left;
 
 /* ------------------------------ Seção Sobre mim ----------------------------------*/
 .sobre__mim {
-    width: 100%;
+    width: auto;
     gap: 10px;
-    max-width: 1136px;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: auto;
-    padding: 32px 10px 32px 10px;
+    width: 1400px;
+    padding: 32px 20px 32px 20px;
 }
 
 .sobre-mim__titulo {
@@ -167,20 +191,21 @@ text-align: left;
     line-height: 18.78px;
     text-align: left;
     line-height: 35px;
-    
+
 
 }
 
-.paragrafo{
+.paragrafo {
     text-align: justify;
 }
 
-.ident__paragrafo{
+.ident__paragrafo {
     margin-left: 50px;
 }
 
 /*------------------------------ Seção de Habilidades ------------------------------*/
 .habilidades {
+    padding-top: 30px;
     border-top: solid 1px rgb(49, 93, 147);
     display: flex;
     flex-direction: column;
@@ -273,12 +298,14 @@ text-align: left;
     width: 368px;
     background: #FFFFFF;
     box-sizing: border-box;
+    padding: 10px;
 
-    
+
 }
 
 .formacao__elemento__imagem {
     display: flex;
+    margin-bottom: 5px;
     justify-content: center;
     border: solid 1px rgb(49, 93, 147);
 
@@ -299,15 +326,15 @@ text-align: left;
 
 /*------------------------------ Seção de Projetos  e esperiencia profissional---------------------------------*/
 .projetos {
-    
-    
-  
+
+
     border-top: solid 1px rgb(49, 93, 147);
 
 
 }
 
 .projetos__titulo {
+    padding-top: 30px;
     font-family: Raleway;
     font-size: 32px;
     font-weight: 700;
@@ -317,6 +344,7 @@ text-align: left;
 }
 
 .projetos__subtitulos {
+    padding-top: 30px;
     font-family: Raleway;
     font-size: 31px;
     font-weight: 600;
@@ -327,46 +355,48 @@ text-align: left;
 .projeto__elemento {
     display: flex;
     padding: 50px;
-    justify-content:center;
+    justify-content: center;
     box-sizing: border-box;
-   
-    
-    
+
+
+
 }
-.projetos__conteiner{
+
+.projetos__conteiner {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width:20%;
+    width: 20%;
     padding: 20px;
-  
+
 }
 
-.projeto__img__links{
+.projeto__img__links {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50%;
+    width: 800px;
     padding: 20px;
     box-sizing: border-box;
 }
 
-.img_projeto{
+.img__projeto {
     width: 100%;
     height: 500px;
-    min-width: 400px;
-    box-shadow: 0px 0px 10px 3px rgb(49, 93, 147);;
+    box-shadow: 0px 0px 10px 3px rgb(49, 93, 147);
+    ;
 }
 
-.projetos__nome{
+.projetos__nome {
     margin-top: 0;
 }
-.projeto__acesso_codigo_page{
+
+.projeto__acesso_codigo_page {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap:20px;
+    gap: 20px;
     min-width: 200px;
     width: 100%;
     box-sizing: border-box;
@@ -375,7 +405,7 @@ text-align: left;
 
 
 
-.button__page__code__site{
+.button__page__code__site {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -424,11 +454,16 @@ text-align: left;
 
 }
 
+.img__projeto {
+    width: 100%;
+}
+
 
 
 /*------------------------------ Seção de Contato ---------------------------------*/
 
 .contato {
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -440,6 +475,7 @@ text-align: left;
 }
 
 .contato__titulo {
+    padding-top: 30px;
     font-family: Raleway;
     font-size: 32px;
     font-weight: 700;
@@ -551,43 +587,230 @@ text-align: left;
 
 /* ------------------------------ Responsividade ---------------------------------------*/
 
-/* Tablets e telas maiores */
-@media (min-width: 768px) {
+/*telas pequenas celulares e tabletes até com telas de largura até 700px*/
+@media(max-width:1000px) {
     .cabecalho {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-    }
+       padding: 0;
+       flex-direction: column;
+       width: 100%;
+   }
 
     .cabecalho__logo {
-        max-width: 100px;
+        display: none;
     }
 
     .cabecalho__titulo {
+        margin-top: 20px;
+        font-size: 1.5rem;
+        
+        
+    }
+
+    /* Navegação*/
+    .navegacao {
+        align-self: start;
+        display: none;
+    }
+
+    
+    .navegacao__lista {
+        padding: 5px;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        width: 100%;
+
+        border: solid 5px rgb(123, 10, 10);
+
+    }
+
+
+    /*seção apresentação*/
+
+    .apresentacao {
+
+        display: block;
+        padding: 10px;
+        text-align: center;
+        
+        box-sizing: border-box;
+        
+       
+
+
+
+
+
+    }
+
+    .img__pessoal__container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+    .apresentacao__foto {
+        width: 170px;
+
+
+    }
+
+    .apresentacao__conteiner {
+        display: flex;
+        padding: 5px;
+        flex-direction: column;
+        height: auto;
+        gap: 10px;
+        margin-bottom: 50px;
+        box-sizing: border-box;
+
+    }
+
+    .apresentacao__titulo {
+        text-align: center;
         font-size: 1.5rem;
     }
 
-    .navegacao__lista {
-        display: flex;
-        flex-direction: row;
-        gap: 1rem;
-        margin-top: 0;
+    .apresentacao__subtitulo {
+        font-size: 1.2rem;
+
     }
 
-    .navegacao__elemento a {
+
+    .sobre__mim {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        margin-top: 50px;
+
+
+    }
+
+    .sobre-mim__titulo {
+        font-size: 1.5rem;
+    }
+
+    .sobre-mim__apresentacao {
+        display: flex;
+        flex-direction: column;
+        
+        width: 90%;
+
+    }
+
+    .paragrafo {
         font-size: 1rem;
     }
-}
 
-/* Telas grandes */
-@media (min-width: 1024px) {
-
-    /* Aqui você pode ajustar ainda mais o design para telas grandes */
-    .cabecalho__titulo {
-        font-size: 1.8rem;
+    .formacao__titulo {
+        font-size: 1.5rem;
     }
 
-    .navegacao__elemento a {
-        font-size: 1.1rem;
+    .formacao__lista {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .formacao__elemento {
+        width: 250px;
+    }
+
+    .projetos__titulo {
+        font-size: 1.5rem;
+    }
+
+    .projetos__subtitulos {
+        font-size: 1.5rem;
+    }
+
+    .projeto__elemento {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 80px;
+        padding: 0;
+    }
+
+    .projeto__img__links {
+        display: flex;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        
+        box-sizing: border-box;
+
+    }
+
+    .img__projeto {
+        width:300px;
+        height: 200px;
+    }
+
+
+    /* seção contatos*/
+
+    .contato__form__img {
+        display: none;
+    }
+
+    .contato__container__formulario {
+        flex-direction: row;
+        margin-bottom: 30px;
+        padding: 0;
+
+    }
+    .contato__titulo{
+        font-size: 1.5rem;
+        margin-bottom: 30px;
+    }
+
+    .contato__formulario {
+        flex-direction: column;
+        width: 80%;
+        gap: 10px;
+        padding: 0px;
+
+    }
+
+    .contato__campo {
+        width: 100%;
+    }
+
+
+}
+
+
+/*telas medias */
+
+@media(min-width:1001px) and (max-width:1400px){
+    .projeto__elemento{
+      
+        padding: 30px;
+       
+
+    }
+
+    .projetos__conteiner{
+        
+        justify-content: space-between;
+    }
+    .projeto__img__links {
+        display: flex;
+        width:100%;
+       
+      
+        padding: 0;
+        margin: 0;
+        
+        box-sizing: border-box;
+
+    }
+
+    .img__projeto {
+        width: 800px;
+       
+        padding: 0;
+        
     }
 }
+
